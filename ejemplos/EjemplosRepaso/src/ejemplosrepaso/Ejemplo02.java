@@ -21,7 +21,11 @@ public class Ejemplo02 {
         Scanner entrada = new Scanner(System.in);
         String ciudad;
         String pais;
-        System.out.printf("%s%s", ciudad, pais);
+        System.out.println("Ingrese la ciudad");
+        ciudad= entrada.nextLine();
+        System.out.println("Ingrese el pais");
+        pais= entrada.nextLine();
+        System.out.printf("%s, situada en el sur del pais:\n\t%s.", ciudad, pais);
     }
     
 }
