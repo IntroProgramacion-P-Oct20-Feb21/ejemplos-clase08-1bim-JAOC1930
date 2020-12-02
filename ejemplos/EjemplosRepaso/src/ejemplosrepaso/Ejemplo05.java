@@ -14,6 +14,8 @@
  */
 package ejemplosrepaso;
 
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -21,9 +23,18 @@ package ejemplosrepaso;
 public class Ejemplo05 {
 
     public static void main(String[] args) {
+        Scanner entrada= new Scanner(System.in);
         boolean bandera = true;
+        String salir;
+        System.out.println("Desea salir del ciclo digite si");
+        salir= entrada.nextLine();
+        salir= salir.toLowerCase();
         while (bandera) {
+            if(salir.equals("si")||salir.equals("s")){
+                bandera= false;
+            }
             System.out.println("Usted está en el ciclo");
+           
         }
     }
 }

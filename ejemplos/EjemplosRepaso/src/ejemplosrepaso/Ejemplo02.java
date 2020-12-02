@@ -26,7 +26,8 @@ public class Ejemplo02 {
         System.out.println("Ingrese el pais");
         pais= entrada.nextLine();
         pais= pais.toUpperCase();
-        System.out.printf("%s, situada en el sur del pais:\n\t%s.", ciudad, pais);
+        System.out.printf("%s, situada en el sur del pais:\n\n\t%s."
+                , ciudad, pais);
         
     }
     
